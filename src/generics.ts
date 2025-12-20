@@ -1,0 +1,2 @@
+// 6-3 Generics in typescript
+// In TypeScript, generics allow you to write flexible, reusable code that works with different types without losing type safety. Think of them as “type parameters” you pass when using a function, class, or interface.
