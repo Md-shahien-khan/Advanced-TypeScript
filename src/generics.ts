@@ -76,7 +76,8 @@ const rollNumbers5 : GenericArray2<number> = [4, 5, 11];
 const isEligibleList5 : GenericArray2<boolean> = [true, false, true];
 
 
-const userList: GenericArray5<{name : string, age : number}> = [
+type User = {name : string, age : number}
+const userList: GenericArray5<User> = [
     {
         name : "shawon",
         age : 24
@@ -85,7 +86,7 @@ const userList: GenericArray5<{name : string, age : number}> = [
         name : 'khan',
         age : 22
     },
-    {
-        // isEligible5 : true
-    }
+    // {
+    //     // isEligible5 : true
+    // }
 ]
