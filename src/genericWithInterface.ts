@@ -1,3 +1,5 @@
+// 6-4 Generic with Type
+
 interface Developer<T, X=null> {  // we put null because not everyone has bike and its mendatory to put a value so we use null
     name : string;
     salary : number;
@@ -99,3 +101,16 @@ const seniorDeveloper : Developer<forSeniorDev> = {
     },
     bike : null
 };
+
+
+
+
+// practice
+interface Home {
+    rent : number,
+    capacity : number,
+    postCode : string,
+    kitchen : number
+}
+
+const Home2 : Home
