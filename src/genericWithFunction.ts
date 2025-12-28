@@ -72,5 +72,44 @@ const student2 = {
 
 const result = addStudentToCourse(student1);
 const result2 = addStudentToCourse(student2);
-console.log(result, result2);
+// console.log(result, result2);
+
+
+const mergeObjects = <T, U>(obj1: T, obj2: U) => {
+    return {
+        ...obj1,
+        ...obj2,
+    };
+};
+
+const user = { id: 1, name: 'Shawon' };
+const extraInfo = { role: 'admin', isActive: true };
+
+const mergedData = mergeObjects(user, extraInfo);
+console.log(mergeObjects)
+
+
+
+
+
+// Api response
+type ApiResponse<T> = {
+    success: boolean;
+    data: T;
+};
+
+const createResponse = <T>(data: T): ApiResponse<T> => {
+    return {
+        success: true,
+        data,
+    };
+};
+
+const userResponse = createResponse({
+    id: 1,
+    name: 'Next Level Dev',
+});
+
+const numberResponse = createResponse(200);
+console.log(numberResponse);
 
